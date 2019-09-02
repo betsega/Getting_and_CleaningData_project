@@ -126,17 +126,7 @@ tidy_data<-tidy_data[order(tidy_data$subject,tidy_data$activity),]
 write.table(tidy_data, file = "tidydata.txt",row.name=FALSE)
 
 
-library(codebook)
 
-dat4<-codebook(data_set)
-write.table(dat4, "codebook.md")
-
-
-####  Produce codebook
-# 
-#  library(knitr)
-#  
-#  knit2html("codebook.Rmd")
 
 
 
